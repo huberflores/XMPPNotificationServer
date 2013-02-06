@@ -41,7 +41,7 @@ $ nano web.xml
 </web-app>
 
 
-#Configure Openfire/XMPP server
+Configure Openfire/XMPP server
 
 $ ~/xmpp-notification/target/xmpp-notification
 
@@ -50,5 +50,5 @@ $ nano server.properties
 server=your-xmpp-server
 domain=your-xmpp-domain
 
-#Build war file
-#Locate war file within your Web server
+Build war file
+Locate war file within your Web server
