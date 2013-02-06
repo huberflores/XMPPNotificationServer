@@ -7,7 +7,7 @@ The messaging framework is introduced as a component that follows a client/serve
 Requirements
 -------------
 
-- Openfire or Jabber (Gateway broker) - [Here](https://gist.github.com/huberflores/5fe4c840bbb00ef030c5) you can find a guide to configure openfire
+- Openfire or Jabber (Gateway broker) - [Here](https://gist.github.com/huberflores/5fe4c840bbb00ef030c5) you can find a guide to configure Openfire 3.7.1
 
 - Maven2
 
@@ -18,15 +18,15 @@ Requirements
 Installation
 -------------
 
-$ git clone https://github.com/huberflores/XMPPNotificationServer.git
+  $ git clone https://github.com/huberflores/XMPPNotificationServer.git
 
-$ cd ~/XMPPNotificationServer/
+  $ cd ~/XMPPNotificationServer/
 
-$ mvn install
+  $ mvn install
 
-$ cd ~/xmpp-notification/target/xmpp-notification/WEB-INF/
+  $ cd ~/xmpp-notification/target/xmpp-notification/WEB-INF/
 
-$ nano web.xml
+  $ nano web.xml
 
 ```xml
 <web-app>
@@ -54,4 +54,5 @@ domain=your-xmpp-domain
 ```
 
 Build war file
+
 Locate war file within your Web server
