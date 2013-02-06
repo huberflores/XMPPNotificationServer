@@ -19,7 +19,9 @@ Installation
 -------------
 
 $ git clone https://github.com/huberflores/XMPPNotificationServer.git
+
 $ cd ~/XMPPNotificationServer/
+
 $ mvn install
 
 
