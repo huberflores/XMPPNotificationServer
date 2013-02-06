@@ -1,0 +1,137 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>ee.ut.notification.mobile</groupId>
+  <artifactId>xmpp-notification</artifactId>
+  <packaging>war</packaging>
+  <version>1.0-SNAPSHOT</version>
+  
+  <name>xmpp-notification</name>
+  
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+       
+    <dependency>
+      <groupId>org.igniterealtime.smack</groupId>
+      <artifactId>smack</artifactId>
+      <version>3.2.1</version>
+    </dependency>
+    
+    <dependency>
+	  <groupId>org.igniterealtime.smack</groupId>
+	  <artifactId>smackx</artifactId>
+	  <version>3.2.1</version>
+    </dependency>   
+    
+    <dependency>
+      <groupId>commons-io</groupId>
+      <artifactId>commons-io</artifactId>
+      <version>2.0.1</version>
+    </dependency>
+    
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>servlet-api</artifactId>
+      <version>2.5</version>
+      <scope>test</scope>
+    </dependency>
+     
+    <dependency>
+      <artifactId>activation</artifactId>
+      <groupId>javax.activation</groupId>
+      <type>jar</type>
+      <version>1.1</version>
+    </dependency>
+     
+    <dependency>
+      <groupId>org.apache.httpcomponents</groupId>
+      <artifactId>httpcore</artifactId>
+      <type>jar</type>
+      <version>4.0.1</version>
+    </dependency>
+     
+    <dependency>
+      <groupId>org.apache.httpcomponents</groupId>
+      <artifactId>httpclient</artifactId>
+      <type>jar</type>
+      <version>4.0</version>
+    </dependency>
+          
+    <dependency>
+      <artifactId>commons-logging</artifactId>
+      <groupId>commons-logging</groupId>
+      <type>jar</type>
+      <version>1.1.1</version>
+    </dependency>
+        
+    <dependency>
+      <groupId>com.googlecode.json-simple</groupId>
+	  <artifactId>json-simple</artifactId>
+	  <version>1.1</version>
+    </dependency>
+            
+  </dependencies> 
+  
+  <build>
+    <plugins>
+     <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>2.3.2</version>
+        <configuration>
+          <source>1.6</source>
+          <target>1.6</target>
+          <compilerArguments>
+            <endorseddirs>${endorsed.dir}</endorseddirs>
+          </compilerArguments>
+        </configuration>
+     </plugin>
+     
+     <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>2.1</version>
+        <configuration>
+            <failOnMissingWebXml>false</failOnMissingWebXml>
+        </configuration>
+      </plugin>
+      
+      <plugin>
+         <groupId>org.apache.maven.plugins</groupId>
+         <artifactId>maven-dependency-plugin</artifactId>
+         <version>2.1</version>
+         <executions>
+            <execution>
+               <phase>validate</phase>
+               <goals>
+                 <goal>copy</goal>
+               </goals>
+             <configuration>
+               <outputDirectory>${endorsed.dir}</outputDirectory>
+               <silent>true</silent>
+               <artifactItems>
+                  <artifactItem>
+                     <groupId>javax</groupId>
+                     <artifactId>javaee-endorsed-api</artifactId>
+                     <version>6.0</version>
+                     <type>jar</type>
+                  </artifactItem>
+               </artifactItems>
+              </configuration>
+            </execution>
+         </executions>
+      </plugin>
+  </plugins>  
+  
+  <finalName>xmpp-notification</finalName>
+  
+  
+  </build>
+  
+</project>
