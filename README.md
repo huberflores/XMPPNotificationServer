@@ -8,7 +8,7 @@ Requirements
 -------------
 
 - Openfire or Jabber (Gateway broker)
-#Here you can find a guide to configure openfire https://gist.github.com/huberflores/5fe4c840bbb00ef030c5
+[Here](https://gist.github.com/huberflores/5fe4c840bbb00ef030c5) you can find a guide to configure openfire
 
 - Maven2
 
