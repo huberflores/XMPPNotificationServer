@@ -28,6 +28,7 @@ $ cd ~/xmpp-notification/target/xmpp-notification/WEB-INF/
 
 $ nano web.xml
 
+```xml
 <web-app>
   <servlet>
     <servlet-name>xmppnotification</servlet-name>
@@ -39,7 +40,7 @@ $ nano web.xml
     <url-pattern>/xmppnotification</url-pattern>
   </servlet-mapping>
 </web-app>
-
+```
 
 Configure Openfire/XMPP server
 
