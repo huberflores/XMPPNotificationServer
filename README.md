@@ -24,8 +24,8 @@ $ cd ~/XMPPNotificationServer/
 
 $ mvn install
 
-
 $ cd ~/xmpp-notification/target/xmpp-notification/WEB-INF/
+
 $ nano web.xml
 
 <web-app>
@@ -44,6 +44,7 @@ $ nano web.xml
 #Configure Openfire/XMPP server
 
 $ ~/xmpp-notification/target/xmpp-notification
+
 $ nano server.properties
 
 server=your-xmpp-server
