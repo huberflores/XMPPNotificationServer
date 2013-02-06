@@ -1,7 +1,7 @@
 Interoperable Notification Service for Smartphones
 ==================================================
 
-The messaging framework is introduced as a component that follows a client/server architecture, which can easily be integrated with any application server for sending JSON-based notifications to any mobile platform that implements a XMPP mobile client. Unlike GCM, APNS or MPNS, XMPP-based notification server is not constrained by number of messages that can be pushed to a mobile or a specific mobile platform.
+The messaging framework is introduced as a component that follows a client/server architecture, which can easily be integrated with any application server for sending JSON-based notifications to any mobile platform that implements a [XMPP mobile client](https://github.com/huberflores/XMPPNotificationClient.git). Unlike GCM, APNS or MPNS, XMPP-based notification server is not constrained by number of messages that can be pushed to a mobile or a specific mobile platform.
 
 
 Requirements
