@@ -48,8 +48,10 @@ $ ~/xmpp-notification/target/xmpp-notification
 
 $ nano server.properties
 
+```xml
 server=your-xmpp-server
 domain=your-xmpp-domain
+```
 
 Build war file
 Locate war file within your Web server
