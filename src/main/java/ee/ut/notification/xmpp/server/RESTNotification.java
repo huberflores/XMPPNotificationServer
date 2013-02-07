@@ -33,6 +33,7 @@ public class RESTNotification extends HttpServlet {
 			xmpp.initialize();
 			msg = new Message();
 			msg.addAttribute("payload", payload);
+			msg.addAttribute("servertime", System.currentTimeMillis()+""); //comment if not needed
 			
 			xmpp.sendNotification(jidmobile, msg);
 		} catch (FileNotFoundException e) {

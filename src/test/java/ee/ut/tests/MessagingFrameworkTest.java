@@ -27,6 +27,7 @@ public class MessagingFrameworkTest {
 		
 		msg = new Message();
 		msg.addAttribute("payload", "This is raw data for a mobile application");
+		msg.addAttribute("servertime", System.currentTimeMillis() + ""); //comment if not needed
 		
 		xmpp.sendNotification("jidmobile@amazon-xmpp/Home", msg);
 		
