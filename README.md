@@ -7,11 +7,11 @@ The messaging framework is introduced as a component that follows a client/serve
 Requirements
 -------------
 
-- Openfire or Jabber (Gateway broker) - [Here](https://gist.github.com/huberflores/4735608) you can find a guide to configure Openfire 3.7.1
+- Openfire or ejabber (Gateway broker) - [Here](https://gist.github.com/huberflores/4735608) you can find a guide to configure Openfire 3.7.1
 
 - Maven2
 
-- Web server
+- Web server (e.g. GlassFish, [Tomcat](http://tomcat.apache.org/), JBoss, etc.)
 
 
 
@@ -61,6 +61,6 @@ Locate war file within your Web server
 Experimentation
 ---------------
 
-In order to try the messaging framework, install the [XMPP mobile client](https://github.com/huberflores/XMPPNotificationClient) in a device and execute the xmmpload.sh script.
+In order to try the messaging framework, install the [XMPP mobile client](https://github.com/huberflores/XMPPNotificationClient) in a device and execute the xmppload.sh script.
 
-$ ./xmmpload.sh
+$ ./xmppload.sh
