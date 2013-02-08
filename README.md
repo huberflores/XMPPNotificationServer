@@ -56,3 +56,11 @@ domain=your-xmpp-domain
 Build war file
 
 Locate war file within your Web server
+
+
+Experimentation
+---------------
+
+In order to try the messaging framework, install the [XMPP mobile client](https://github.com/huberflores/XMPPNotificationClient) in a device and execute the xmmpload.sh script.
+
+$ ./xmmpload.sh
