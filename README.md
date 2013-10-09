@@ -21,19 +21,19 @@ Installation
 $ git clone https://github.com/huberflores/XMPPNotificationServer.git
 ````
 ```xml
-  $ cd ~/XMPPNotificationServer/
+$ cd ~/XMPPNotificationServer/
 ````
 
 ```xml
-  $ mvn install
+$ mvn install
 ````
 
 ```xml
-  $ cd ~/xmpp-notification/target/xmpp-notification/WEB-INF/
+$ cd ~/xmpp-notification/target/xmpp-notification/WEB-INF/
 ````
 
 ```xml
-  $ nano web.xml
+$ nano web.xml
 ````
 
 ```xml
@@ -52,9 +52,13 @@ $ git clone https://github.com/huberflores/XMPPNotificationServer.git
 
 Configure Openfire/XMPP server
 
+```xml
 $ ~/xmpp-notification/target/xmpp-notification
+````
 
+```xml
 $ nano server.properties
+````
 
 ```xml
 server=your-xmpp-server
@@ -71,4 +75,6 @@ Experimentation
 
 In order to try the messaging framework, install the [XMPP mobile client](https://github.com/huberflores/XMPPNotificationClient) in a device and execute the xmppload.sh script.
 
+```xml
 $ ./xmppload.sh
+````
