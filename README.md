@@ -17,16 +17,24 @@ Requirements
 
 Installation
 -------------
-
-  $ git clone https://github.com/huberflores/XMPPNotificationServer.git
-
+```xml
+$ git clone https://github.com/huberflores/XMPPNotificationServer.git
+````
+```xml
   $ cd ~/XMPPNotificationServer/
+````
 
+```xml
   $ mvn install
+````
 
+```xml
   $ cd ~/xmpp-notification/target/xmpp-notification/WEB-INF/
+````
 
+```xml
   $ nano web.xml
+````
 
 ```xml
 <web-app>
