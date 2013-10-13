@@ -2,7 +2,6 @@
 #in order to avoid unnecessary latencies
 #./xmmpload.sh
 
-
 for t in {1..24}
 do
    #Send 3 messages per minute, 1 message each 20s
